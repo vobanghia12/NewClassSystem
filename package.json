@@ -1,0 +1,31 @@
+{
+  "name": "hackviolet-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "build": "postcss publics/style.css -o view/style.css",
+    "watch": "watch `npm run build` ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mfshi03/ClassManagementApp.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "path": "^0.12.7",
+    "postcss-cli": "^9.1.0",
+    "watch": "^0.13.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
+  }
+}
